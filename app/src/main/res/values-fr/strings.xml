@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RestaurantApp</string>
+
+    <string name="menu">Menu</string>
+    <string name="setting">Paramètre</string>
+    <string name="category_english_name">Le nom de catégorie en anglais</string>
+    <string name="category_french_name">Le nom de catégorie en français</string>
+    <string name="add_category">Ajouter une catégorie</string>
+    <string name="price">Prix</string>
+    <string name="language">Langues</string>
+    <string name="discount">Réduction</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="require">Nécessiter</string>
+    <string name="properties">Propriétés</string>
+    <string name="french">french</string>
+    <string name="english">anglais</string>
+    <string name="include_english">Inclure l\'anglais</string>
+    <string name="priceunit">Prix à l\'unité</string>
+    <string name="restaurant_name">Nom du restaurant</string>
+
+
+    <!-- server - error -->
+    <string name="get_restaurant_info">Obtenir des informations</string>
+    <string name="post_restaurant_info">Mise à jour des informations</string>
+
+    <string name="get_category">Obtenir toutes les catégories</string>
+    <string name="post_category">Création d\'une catégorie</string>
+    <string name="patch_category">Modifier la catégorie</string>
+    <string name="delete_category">Suppression d\'une catégorie</string>
+
+    <string name="get_products">Obtenez tous les repas</string>
+    <string name="post_product">Création de repas</string>
+    <string name="patch_product">Modifier le repas</string>
+    <string name="delete_product">Suppression de repas</string>
+
+    <string name="get_properties">Obtention de toutes les propriétés</string>
+    <string name="post_property">Création d\'une propriété</string>
+    <string name="patch_property">Modifier la propriété</string>
+    <string name="delete_property">Suppression d\'une propriété</string>
+
+    <string name="get_details">Obtenir tous les détails</string>
+    <string name="post_detail">Création de détails</string>
+    <string name="patch_detail">Modifier les détails</string>
+    <string name="delete_detail">Suppression de détails</string>
+
+
+    <string-array name="name">
+        <item>Nom français</item>
+        <item>Nom Anglais</item>
+    </string-array>
+
+    <string-array name="detail">
+        <item>détail Français</item>
+        <item>détail Anglais</item>
+    </string-array>
+
+    <!-- errors -->
+    <string name="server_error">Une erreur s\'est produite. Veuillez réessayer</string>
+    <string name="category_name">Vous devez entrer le nom de la catégorie</string>
+    <string name="pick_image">prenez une photo !!</string>
+    <string name="invalide_input">là une entrée invalide !!</string>
+    <string name="min_max">le minimum doit être plus grand que le choix maximum</string>
+    <string name="no_prop_selected">Aucune propriété sélectionnée</string>
+
+    <string name="exit">Cliquez à nouveau pour confirmer</string>
+
+
+</resources>

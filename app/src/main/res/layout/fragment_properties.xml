@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragement.PropertiesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divider5"
+            app:layout_constraintStart_toStartOf="@+id/divider5"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/propertiesRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/PropProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sandwish"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="@+id/propertiesRecyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/propertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Property Selected"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/divider5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="42dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <ImageView
+            android:id="@+id/propertyDismissButton"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/dismiss"
+            app:layout_constraintBottom_toBottomOf="@+id/PropProductName"
+            app:layout_constraintEnd_toStartOf="@+id/PropProductName"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/PropProductName" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/waitForProcess"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/waitForProcess2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/blackTransparent"
+                android:src="@color/blackTransparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBarSetting"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="70dp"
+                app:layout_constraintEnd_toEndOf="@+id/waitForProcess2"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/tryAgainSetting"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="56dp"
+                android:text="Try Again"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarSetting"
+                app:layout_constraintStart_toStartOf="@+id/progressBarSetting"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarSetting" />
+
+            <TextView
+                android:id="@+id/stepProgressSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/progressBarSetting"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarSetting"
+                app:layout_constraintStart_toStartOf="@+id/progressBarSetting" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

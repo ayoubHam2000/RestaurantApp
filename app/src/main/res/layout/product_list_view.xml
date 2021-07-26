@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="140dp"
+    android:background="@color/mainColor"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/productBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/productbackground" />
+
+    <ImageView
+        android:id="@+id/ProductImage"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/productBox"
+        app:layout_constraintStart_toStartOf="@+id/productBox"
+        app:layout_constraintTop_toTopOf="@+id/productBox" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="24.7dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productBox"
+        app:layout_constraintEnd_toEndOf="@+id/productBox"
+        app:srcCompat="@drawable/box2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="15.2dp"
+        android:layout_height="15.2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/removewhite" />
+
+    <ImageView
+        android:id="@+id/ProductRemoveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@color/Transparent" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Sandwish"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/productBox"
+        app:layout_constraintStart_toEndOf="@+id/ProductImage"
+        app:layout_constraintTop_toTopOf="@+id/productBox" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/blackTransparent"
+        app:layout_constraintEnd_toEndOf="@+id/productBox"
+        app:layout_constraintStart_toEndOf="@+id/ProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blackTransparent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/productBox"
+        app:layout_constraintStart_toEndOf="@+id/ProductImage" />
+
+    <TextView
+        android:id="@+id/productProperties"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center|left"
+        android:text="TextView"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="@+id/productBox"
+        app:layout_constraintStart_toEndOf="@+id/ProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="18.00"
+        android:textColor="@color/gold"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productUnitPrice"
+        app:layout_constraintEnd_toStartOf="@+id/productUnitPrice"
+        app:layout_constraintTop_toTopOf="@+id/productUnitPrice" />
+
+    <TextView
+        android:id="@+id/productUnitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="MAD"
+        android:textColor="@color/unitPrice"
+        android:textSize="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productBox"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/ProductImage" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductImage"
+        app:layout_constraintEnd_toEndOf="@+id/ProductImage"
+        app:layout_constraintStart_toStartOf="@id/ProductImage"
+        app:layout_constraintTop_toTopOf="@+id/ProductImage"
+        app:srcCompat="@drawable/imagetransparent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="@+id/productBox"
+        app:layout_constraintTop_toTopOf="@+id/productBox"
+        app:srcCompat="@color/patchProduct" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="15.2dp"
+        android:layout_height="15.2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@drawable/write" />
+
+    <ImageView
+        android:id="@+id/patchProduct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@color/Transparent" />
+
+    <TextView
+        android:id="@+id/priceBeforDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="20 MAD"
+        android:textSize="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/productUnitPrice"
+        app:layout_constraintEnd_toEndOf="@+id/priceDiscount"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/productPrice"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/priceDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="-20%"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productUnitPrice"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/productUnitPrice"
+        app:layout_constraintTop_toTopOf="@+id/productUnitPrice" />
+
+    <View
+        android:id="@+id/crossLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/blackTransparent"
+        app:layout_constraintBottom_toBottomOf="@+id/priceBeforDiscount"
+        app:layout_constraintEnd_toEndOf="@+id/priceBeforDiscount"
+        app:layout_constraintStart_toStartOf="@+id/priceBeforDiscount"
+        app:layout_constraintTop_toTopOf="@+id/priceBeforDiscount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

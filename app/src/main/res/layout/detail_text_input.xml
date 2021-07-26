@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/detailNextButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next"
+        android:tint="@color/nextButtonActive"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/detailBeforButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/befor" />
+
+    <TextView
+        android:id="@+id/setDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="English Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailBeforButton"
+        app:layout_constraintStart_toEndOf="@+id/detailBeforButton"
+        app:layout_constraintTop_toTopOf="@+id/detailBeforButton" />
+
+    <EditText
+        android:id="@+id/setdetailNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Detail Name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailNextButton"
+        app:layout_constraintEnd_toStartOf="@+id/detailNextButton"
+        app:layout_constraintStart_toEndOf="@+id/setDetailName"
+        app:layout_constraintTop_toTopOf="@+id/detailNextButton" />
+
+    <TextView
+        android:id="@+id/setDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/setDetailName"
+        app:layout_constraintStart_toStartOf="@+id/setDetailName"
+        app:layout_constraintTop_toBottomOf="@+id/setDetailName" />
+
+    <EditText
+        android:id="@+id/setDetailPriceInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Detail Price"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setDetailPrice"
+        app:layout_constraintEnd_toEndOf="@+id/setdetailNameInput"
+        app:layout_constraintStart_toStartOf="@+id/setdetailNameInput"
+        app:layout_constraintTop_toTopOf="@+id/setDetailPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

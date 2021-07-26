@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorBar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/texture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/settingMainColor"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/leftBarColor"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingTrensparentColor"
+        android:layout_width="15dp"
+        android:layout_height="0dp"
+        android:background="@color/blackTransparent"
+        app:layout_constraintBottom_toBottomOf="@+id/settingMainColor"
+        app:layout_constraintEnd_toEndOf="@+id/settingMainColor"
+        app:layout_constraintTop_toTopOf="@+id/settingMainColor" />
+
+    <ImageView
+        android:id="@+id/settingImageView"
+        android:layout_width="22dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingMainColor"
+        app:layout_constraintStart_toStartOf="@+id/settingMainColor"
+        app:layout_constraintTop_toTopOf="@+id/settingMainColor"
+        app:srcCompat="@drawable/settingwhite" />
+
+    <TextView
+        android:id="@+id/settingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingMainColor"
+        app:layout_constraintEnd_toStartOf="@+id/settingTrensparentColor"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/settingImageView"
+        app:layout_constraintTop_toTopOf="@+id/settingMainColor" />
+
+
+    <ImageView
+        android:id="@+id/menuMainColor"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/leftBarColor"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menuTransparentColor"
+        android:layout_width="15dp"
+        android:layout_height="0dp"
+        android:background="@color/blackTransparent"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMainColor"
+        app:layout_constraintEnd_toEndOf="@+id/menuMainColor"
+        app:layout_constraintTop_toTopOf="@+id/menuMainColor" />
+
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="22dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMainColor"
+        app:layout_constraintStart_toStartOf="@+id/menuMainColor"
+        app:layout_constraintTop_toTopOf="@+id/menuMainColor"
+        app:srcCompat="@drawable/menuwhite" />
+
+    <TextView
+        android:id="@+id/menuTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/menu"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMainColor"
+        app:layout_constraintEnd_toStartOf="@+id/settingTrensparentColor"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/settingImageView"
+        app:layout_constraintTop_toTopOf="@+id/menuMainColor" />
+
+    <ImageView
+        android:id="@+id/settingButtonFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/Transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/settingMainColor"
+        app:layout_constraintEnd_toEndOf="@+id/settingMainColor"
+        app:layout_constraintStart_toStartOf="@+id/settingMainColor"
+        app:layout_constraintTop_toTopOf="@+id/settingMainColor" />
+
+    <ImageView
+        android:id="@+id/menuButtonFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/Transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMainColor"
+        app:layout_constraintEnd_toEndOf="@+id/menuMainColor"
+        app:layout_constraintStart_toStartOf="@+id/menuMainColor"
+        app:layout_constraintTop_toTopOf="@+id/menuMainColor" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/RestorantName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoleft" />
+
+    <TextView
+        android:id="@+id/RestorantName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="gsgsdf"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/timeBox"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/RestorantName"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/logoright" />
+
+    <ImageView
+        android:id="@+id/timeBox"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/blackTransparent" />
+
+    <TextView
+        android:id="@+id/timeDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Mon"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeMonth"
+        app:layout_constraintStart_toStartOf="@+id/timeMonth" />
+
+    <TextView
+        android:id="@+id/timeMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center"
+        android:text="Feb 10"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeHour"
+        app:layout_constraintStart_toEndOf="@+id/timeHour" />
+
+    <TextView
+        android:id="@+id/timeHour"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="20"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeBox"
+        app:layout_constraintEnd_toEndOf="@+id/timeBox"
+        app:layout_constraintStart_toStartOf="@+id/timeBox"
+        app:layout_constraintTop_toTopOf="@+id/timeBox" />
+
+    <TextView
+        android:id="@+id/timeMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="28"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeDay"
+        app:layout_constraintStart_toStartOf="@+id/timeDay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/languageItem"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView">
+
+        <ImageView
+            android:id="@+id/languageBuckground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/Transparent" />
+
+        <ImageView
+            android:id="@+id/languageSecondColor"
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/languageBuckground"
+            app:srcCompat="@color/Transparent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/language"
+            android:textColor="@color/gold"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/languageBuckground"
+            app:layout_constraintEnd_toStartOf="@+id/languageSecondColor"
+            app:layout_constraintStart_toEndOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/languageBuckground" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="28dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/languageBuckground"
+            app:layout_constraintStart_toStartOf="@+id/languageBuckground"
+            app:layout_constraintTop_toTopOf="@+id/languageBuckground"
+            app:srcCompat="@drawable/languages" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/disableStutusBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/Transparent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

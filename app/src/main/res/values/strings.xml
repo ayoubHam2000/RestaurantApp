@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">RestaurantApp</string>
+
+    <string name="menu">Menu</string>
+    <string name="setting">Setting</string>
+    <string name="category_english_name">Category English Name</string>
+    <string name="category_french_name">Category French Name</string>
+    <string name="add_category">Add Category</string>
+    <string name="price">Price</string>
+    <string name="language">Language</string>
+    <string name="discount">Discount</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="require">require</string>
+    <string name="properties">properties</string>
+    <string name="french">french</string>
+    <string name="english">english</string>
+    <string name="include_english">Include English</string>
+    <string name="priceunit">Price Unit</string>
+    <string name="restaurant_name">Restaurant Name</string>
+
+
+    <!-- server - error -->
+    <string name="get_restaurant_info">Getting Information</string>
+    <string name="post_restaurant_info">Updating Information</string>
+
+    <string name="get_category">Getting All Categories</string>
+    <string name="post_category">Creating Category</string>
+    <string name="patch_category">Modify Category</string>
+    <string name="delete_category">Deleting Category</string>
+
+    <string name="get_products">Get All Meals</string>
+    <string name="post_product">Creating Meal</string>
+    <string name="patch_product">Modify Meal</string>
+    <string name="delete_product">Deleting Meal</string>
+
+    <string name="get_properties">Getting All Properties</string>
+    <string name="post_property">Creating Property</string>
+    <string name="patch_property">Modify Property</string>
+    <string name="delete_property">Deleting Property</string>
+
+    <string name="get_details">Getting All Details</string>
+    <string name="post_detail">Creating Detail</string>
+    <string name="patch_detail">Modify Detail</string>
+    <string name="delete_detail">Deleting Detail</string>
+
+
+    <!-- product input -->
+
+    <string-array name="name">
+        <item>French Name</item>
+        <item>English Name</item>
+    </string-array>
+
+    <!-- product detail input -->
+
+    <string-array name="detail">
+        <item>detail French</item>
+        <item>detail English</item>
+    </string-array>
+
+    <!-- errors -->
+    <string name="server_error">An error occurred. Please try again</string>
+    <string name="category_name">You should enter the category name</string>
+    <string name="pick_image">take an image !!</string>
+    <string name="invalide_input">there an invalid input !!</string>
+    <string name="min_max">the minimum must be greater than the maximum choice</string>
+    <string name="no_prop_selected">No property selected</string>
+
+
+    <string name="exit">Click second time to confirm</string>
+
+
+</resources>

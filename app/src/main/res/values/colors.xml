@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#EBEBEB</color>
+    <color name="gold">#FFC600</color>
+    <color name="unitPrice">#FB6565</color>
+    <color name="patchProduct">#00a40c</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBar">#374645</color>
+    <color name="colorTopBar">#2A3332</color>
+    <color name="color1">#3543BD</color>
+    <color name="blackTransparent">#65000000</color>
+    <color name="remouveButton">#E60505</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="Transparent">#00FFFFFF</color>
+    <color name="leftBarColor">#1A46CA</color>
+
+    <color name="propertyColor">#0099D2</color>
+    <color name="propertyTopTransparent">#4D000000</color>
+    <color name="propertyBottomTransparent">#80000000</color>
+
+    <color name="detailColor">#343eff</color>
+
+    <color name="nextButtonActive">#263DCE</color>
+    <color name="nextButtonDeactivate">#9f9f9f</color>
+
+</resources>
